@@ -1,25 +1,34 @@
 import "./Nav.css";
 
 function CreativeNavbar() {
+
+  
+  window.addEventListener("scroll", function () {
+    const header = document.querySelector(".header")
+    header.classList.toggle("active", window.scrollY > 100)
+  })
+
   return (
-    <nav className="navbar">
+    <nav className="header">
       <div className="uss"> <img src="/src/components/pictures/logo.png"></img>
+      <br/>
+      <h6>UNIQUE SOFTWARE SOLUTIONS</h6>
       </div>
       <ul className="nav-links">
         <li>
-          <a href="/home">Home<span></span></a>
+          <a href="/home">HOME<span></span></a>
         </li>
         <li>
-          <a href="/gg">Login<span></span></a>
+          <a href="/gg">PRODUCTS<span></span></a>
         </li>
         <li>
-          <a href="/sing">Singup<span></span></a>
+          <a href="/sing">ABOUT US<span></span></a>
         </li>
         <li>
-          <a href="/todo_list">Todo<span></span></a>
+          <a href="/todo_list">CLIENT<span></span></a>
         </li>
         <li>
-          <a href="/user">User<span></span></a>
+          <a href="/user">CONTACT<span></span></a>
         </li>
       </ul>
     </nav>

@@ -1,41 +1,80 @@
 @import url('https://fonts.googleapis.com/css2?family=Nosifer&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+
 
 .navbar {
     align-items: center;
-    color: #fff;
+    color: black;
     background-color: black;
-    border-radius: 1px 1px 4px 4px;
-    box-shadow: 1px 1px 3px white, 2px 16px 6px black;
+    /* background: transparent; */
+    
+    /* border-radius: 1px 1px 4px 4px; */
+    /* box-shadow: 1px 1px 3px white, 2px 16px 6px black; */
     /* background: url('../pictures/logo.png'); */
   }
+
+  header .container {
+    padding-top: 15px;
+
+}
+
+  .header {
+    height: 18vh;
+    position: fixed;
+    top: 0vh;
+    z-index: 1000;
+    width: 100%;
+    /* background-color: lightcoral; */
+    box-shadow: 1px 44px 10px -41px black;
+    transition: 0.5s;
+}
+
+.header.active {
+  height: 18vh;
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  background-color: black;
+  box-shadow: -1px 44px 44px -16px black;
+  transition: 0.5s;
+}
 
 
   .uss img {
     position: relative;
     max-width: 130px;
     margin-left: 100px;
-    margin-top: 20px;
+    margin-top: 3px;
 
+  }
+
+  .uss h6 {
+    font-family:  "Orbitron", sans-serif;
+    color: beige;
+    font-weight: 500;
+    font-size: 15px;
+    margin-left: 45px;
+    margin-top: -6px;
+  
   }
 
   .nav-links {
     list-style: none;
     display: flex;
-    font-weight: 800;
     margin-left: 900px;  
   }
 
   .nav-links li {
-    font-weight: 800;
+    font-weight: 400;
     margin-top: -70px;
-    margin-left: 50px;
+    margin-left: 30px;
   }
 
   
   .nav-links li a {
     text-decoration: none;
     color: whitesmoke;
-    font-size: 18px;
+    font-size: 12px;
   }
 
   .nav-links li a:hover {

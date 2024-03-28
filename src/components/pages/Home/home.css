@@ -1,16 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Nosifer&display=swap');
 
 
-* {
+ /* :root{
+  
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    
-  }
+ }
   
   
   .home-page {
-    max-width: 1200px;
+    max-width: 120px;
     margin: 0 auto;
     padding: 30px;
     
@@ -25,143 +25,60 @@
     border: 6px solid black;
     box-shadow: 1px 2px 11px 6px white;
     
-  }    
- 
-  nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-  }
-  
-  nav li {
-    margin: 0 15px;
-    
-  }
-  
-  nav a {
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-    
-  }
+  }     */
 
-  
-  
-  main {
-    padding: 20px;
-    border: 6px solid black;
-    box-shadow: 1px 6px 16px 3px white;
-  }
-  
-  .hero {
-    text-align: center;
-    padding: 40px 0;
-    font-family: 'Nosifer', sans-serif;
-    border: 6px solid black;
-    box-shadow: 1px 2px 11px 6px white;
-    font-family: 'Nosifer', sans-serif;
-  }
-  
-  .hero h1 {
-    color: white;
-    font-weight: 300;
-    font-size: 1.9rem;
-    margin-bottom: 10px;
-    font-family: 'Nosifer', sans-serif;
-  }
-  
-  .hero p {
-    font-size: 1.2rem;
-    color: white;
-    margin-bottom: 20px;
-    font-family: 'Nosifer', sans-serif;
+  .container {
+
+    max-width: 2000px;
 
   }
+  
+  .container img {
 
-  .home-btn {
-    padding: 8px 10px;
-    position: inherit;
-    padding-bottom: 11px;
-    border-radius: 11px;
-    transition: 0.8s all ease;
+    max-width: 100%;
+    max-height: 1200px;
+    margin-top: 0px;
+  }
+
+
+  .btn_shadow{
+    padding: 18px 25px;
+    border-radius: 8px;
+    transition: 0.5s all ease;
     cursor: pointer;
-    font-family: 'Nosifer', sans-serif;
-    box-shadow: 5px 4px 6px white, 15px 11px 6px black;
-
-}
-
-.home-btn:hover{
-    transform: translateY(-5px);
-    
-}
-header ul li a:hover {
-  color: darkgoldenrod;
-  
-} 
-  
-  .features {
-    display: flex;
-    color: white;
-    margin: 70px 0;
-    font-weight: 600;
-    justify-content: space-around;
-    margin: 50px;
-  }
-  
-  .feature {
-    text-align: center;
-    border-radius: 11px;
-    padding: 20px;
-    border: 4px solid black;
-    box-shadow: 3px 2px 6px 4px white;
-    margin: 10px;
+    margin-bottom: 15px;
+    border: 2px solid yellow;
     
   }
+  .btn_shadow{
+    /* background: linear-gradient(185deg, lightpink, red);
+    box-shadow: 11px 14px 11px black, 21px -1px 10px black; */
+    background: linear-gradient(292deg, lightsalmon, red);
+    box-shadow: 2px 3px 1px white, 11px 11px 3px black;
+  }
+  .btn_shadow:hover {
+    background:red;
+    transform: translateY(-8px);
   
-  .feature h2 {
-    font-size: 1.7rem;
-    margin-bottom: 10px;
   }
   
-  footer {
-    background-color: black;
-    color: #fff;
-    text-align: center;
-    padding: 10px 0;
-    margin-top: 20px;
-    font-family: 'Nosifer', sans-serif;
-    box-shadow: 2px 4px 7px 5px white;
+  
+  .button_shadow{
+    padding: 18px 25px;
+    border-radius: 8px;
+    transition: 0.5s all ease;
+    cursor: pointer;
+    margin-bottom: 15px;
     
   }
-
-
-  /* -------------------------------- */
-
-
-header{
-    height: 10vh;
-    line-height: 10vh;
-    font-weight: 500;
-    letter-spacing: 10px;
-    
-}
-
-header .container {
-    padding-top: 15px;
-
-}
-header ul li{
-    margin-left: 45px;
-    margin-top: -15px;
-}
-header ul li a{
-    transition: 0.5s;
-    font-size: 13px;
-    font-weight: 300;
-    letter-spacing: 3px;
+  .button_shadow{
+    background: linear-gradient(462deg, yellow, red);
+    box-shadow: 3px 3px 1px white, 9px 8px 1px black;
+  }
+  .button_shadow:hover {
+    transform: translateY(-6px);
+  }
   
-}
-
 
 @media (max-width: 800px) {
 
