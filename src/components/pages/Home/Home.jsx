@@ -1,53 +1,90 @@
+import "bootstrap/dist/css/bootstrap.min.css";
+
 import "./home.css";
 
 function Home() {
   return (
-    <div className="tests">
-      <div className="home-page">
-        <header>
-          <nav>
-            <ul>
-              <li>
-                <button className="home-btn">
-                  <a href="/">Home</a>
-                </button>
-              </li>
-              <li>
-                <button className="home-btn">
-                  <a href="/gg">Login</a>
-                </button>
-              </li>
-              <li>
-                <button className="home-btn">
-                  <a href="/sing">SINGUP</a>
-                </button>
-              </li>
-            </ul>
-          </nav>
-        </header>
-        <main>
-          <section className="hero">
-            <h1>Welcome to Your Todo Application</h1>
-            <p>Task Creation and Organization</p>
-          </section>
-          <section className="features">
-            <div className="feature">
-              <h2>Context Analysis System</h2>
-              <p>Implement a system that analyzes the context of each task, considering factors such as location, time, and priority.</p>
+    <div  className="carousel slide">
+      <div  className="carousel slide">
+        <div className="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="0"
+            className="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div className="carousel-inner">
+          <div className="carousel-item active">
+            <img
+              src="/src/components/pictures/logo.png"
+              className="d-block w-100"
+              alt="..."
+            />
+            <div className="carousel-caption d-none d-md-block">
+              <h5>First slide label</h5>
+              <p>
+                Some representative placeholder content for the first slide.
+              </p>
             </div>
-            <div className="feature">
-              <h2>Integration with Calendar</h2>
-              <p>Allow users to integrate their to-do list with their calendar, ensuring that tasks are synchronized with scheduled events.</p>
+          </div>
+          <div className="carousel-item">
+            <img src="..." className="d-block w-100" alt="..." />
+            <div className="carousel-caption d-none d-md-block">
+              <h5>Second slide label</h5>
+              <p>
+                Some representative placeholder content for the second slide.
+              </p>
             </div>
-            <div className="feature">
-              <h2>Location-based Reminders</h2>
-              <p>Enable users to set reminders based on their geographical location. For example, remind them to pick up groceries when near a grocery store.</p>
+          </div>
+          <div className="carousel-item">
+            <img src="..." className="d-block w-100" alt="..." />
+            <div className="carousel-caption d-none d-md-block">
+              <h5>Third slide label</h5>
+              <p>
+                Some representative placeholder content for the third slide.
+              </p>
             </div>
-          </section>
-        </main>
-        <footer>
-          <p>&copy; {new Date().getFullYear()} Winny Todo</p>
-        </footer>
+          </div>
+        </div>
+        <button
+          className="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="prev"
+        >
+          <span
+            className="carousel-control-prev-icon"
+            aria-hidden="true"
+          ></span>
+          <span className="visually-hidden">Previous</span>
+        </button>
+        <button
+          className="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="next"
+        >
+          <span
+            className="carousel-control-next-icon"
+            aria-hidden="true"
+          ></span>
+          <span className="visually-hidden">Next</span>
+        </button>
       </div>
     </div>
   );

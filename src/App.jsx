@@ -1,8 +1,7 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 import Home from "./components/pages/Home/Home"
-
-
+import Nav from "./components/Navbar/Navbar"
 
 
 const router = createBrowserRouter([
@@ -10,6 +9,11 @@ const router = createBrowserRouter([
     path: "/",
     element: <Home />,
   },
+  {
+    path: "/ww",
+    element: <Nav />,
+  },
+
   
 ]);
 
