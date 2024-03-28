@@ -10,7 +10,7 @@ const router = createBrowserRouter([
     element: <Home />,
   },
   {
-    path: "/ww",
+    path: "/nav",
     element: <Nav />,
   },
 

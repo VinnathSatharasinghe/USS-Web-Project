@@ -1,93 +1,55 @@
 import "bootstrap/dist/css/bootstrap.min.css";
+import Carousel from "react-bootstrap/Carousel";
 
-import "./home.css";
+import p1 from "../../pictures/11.jpg";
+import p2 from "../../pictures/22.jpg";
+import p3 from "../../pictures/33.jpg";
 
-function Home() {
+const Home = () => {
   return (
-    <div  className="carousel slide">
-      <div  className="carousel slide">
-        <div className="carousel-indicators">
-          <button
-            type="button"
-            data-bs-target="#carouselExampleCaptions"
-            data-bs-slide-to="0"
-            className="active"
-            aria-current="true"
-            aria-label="Slide 1"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleCaptions"
-            data-bs-slide-to="1"
-            aria-label="Slide 2"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleCaptions"
-            data-bs-slide-to="2"
-            aria-label="Slide 3"
-          ></button>
-        </div>
-        <div className="carousel-inner">
-          <div className="carousel-item active">
+    <section>
+      <div className="container">
+        function DarkVariantExample()
+        <Carousel data-bs-theme="dark">
+          <Carousel.Item>
             <img
-              src="/src/components/pictures/logo.png"
               className="d-block w-100"
-              alt="..."
+              src={p1}
+              alt="First slide"
             />
-            <div className="carousel-caption d-none d-md-block">
+            <Carousel.Caption>
               <h5>First slide label</h5>
-              <p>
-                Some representative placeholder content for the first slide.
-              </p>
-            </div>
-          </div>
-          <div className="carousel-item">
-            <img src="..." className="d-block w-100" alt="..." />
-            <div className="carousel-caption d-none d-md-block">
+              <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+            </Carousel.Caption>
+          </Carousel.Item>
+          <Carousel.Item>
+            <img
+              className="d-block w-100"
+              src={p2}
+              alt="Second slide"
+            />
+            <Carousel.Caption>
               <h5>Second slide label</h5>
-              <p>
-                Some representative placeholder content for the second slide.
-              </p>
-            </div>
-          </div>
-          <div className="carousel-item">
-            <img src="..." className="d-block w-100" alt="..." />
-            <div className="carousel-caption d-none d-md-block">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </Carousel.Caption>
+          </Carousel.Item>
+          <Carousel.Item>
+            <img
+              className="d-block w-100"
+              src={p3}
+              alt="Third slide"
+            />
+            <Carousel.Caption>
               <h5>Third slide label</h5>
               <p>
-                Some representative placeholder content for the third slide.
+                Praesent commodo cursus magna, vel scelerisque nisl consectetur.
               </p>
-            </div>
-          </div>
-        </div>
-        <button
-          className="carousel-control-prev"
-          type="button"
-          data-bs-target="#carouselExampleCaptions"
-          data-bs-slide="prev"
-        >
-          <span
-            className="carousel-control-prev-icon"
-            aria-hidden="true"
-          ></span>
-          <span className="visually-hidden">Previous</span>
-        </button>
-        <button
-          className="carousel-control-next"
-          type="button"
-          data-bs-target="#carouselExampleCaptions"
-          data-bs-slide="next"
-        >
-          <span
-            className="carousel-control-next-icon"
-            aria-hidden="true"
-          ></span>
-          <span className="visually-hidden">Next</span>
-        </button>
+            </Carousel.Caption>
+          </Carousel.Item>
+        </Carousel>
       </div>
-    </div>
+    </section>
   );
-}
+};
 
 export default Home;
